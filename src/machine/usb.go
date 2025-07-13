@@ -1,4 +1,4 @@
-//go:build sam || nrf52840 || rp2040 || rp2350
+//go:build sam || nrf52840 || rp2040 || rp2350 || atmega32u4
 
 package machine
 

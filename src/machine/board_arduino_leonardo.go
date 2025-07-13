@@ -37,3 +37,9 @@ const (
 	ADC4 Pin = PF1
 	ADC5 Pin = PF0
 )
+
+// USB constants
+const (
+	usb_STRING_PRODUCT      = "Arduino Leonardo"
+	usb_STRING_MANUFACTURER = "Arduino LLC"
+)

@@ -2,8 +2,12 @@
 	"inherits": ["avr"],
 	"cpu": "atmega32u4",
 	"build-tags": ["atmega32u4", "avr5"],
-	"serial": "none",
-	"linkerscript": "src/device/avr/atmega32u4.ld",
+	"serial": "usb",
+	"ldflags": [
+		"--defsym=__flash_size=32768",
+		"--defsym=__ram_size=2560",
+		"--defsym=__ram_start=256"
+	],
 	"extra-files": [
 		"targets/avr.S",
 		"src/device/avr/atmega32u4.s"
